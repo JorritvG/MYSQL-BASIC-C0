@@ -3,7 +3,8 @@ SELECT * FROM `videogamesales` WHERE 1
 -- Opdracht 2 
 SELECT * FROM `videogamesales` WHERE year="1999"
 -- Opdracht 3
-SELECT * FROM `videogamesales` WHERE genre="Sports" AND NA_Sales
+SELECT SUM(NA_Sales) FROM videogamesales; 
+--Antwoord is 191002
 -- Opdracht 4
 SELECT * FROM `videogamesales` WHERE `year` BETWEEN '1990' AND '2005' AND `publisher` = 'Nintendo'
 -- Opdracht 5
