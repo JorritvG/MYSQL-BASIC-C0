@@ -6,7 +6,7 @@ SELECT * FROM `videogamesales` WHERE year="1999"
 SELECT SUM(NA_Sales) FROM videogamesales; 
 --Antwoord is 191002
 -- Opdracht 4
-SELECT * FROM `videogamesales` WHERE `year` BETWEEN '1990' AND '2005' AND `publisher` = 'Nintendo'
+SELECT `name`, `platform` FROM `videogamesales`, WHERE publisher = "Nintendo";
 -- Opdracht 5
 SELECT * FROM `videogamesales` WHERE `Global_Sales` > 5000
 -- Opdracht 6 
