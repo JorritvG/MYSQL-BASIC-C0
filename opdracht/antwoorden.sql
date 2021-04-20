@@ -30,10 +30,10 @@ WHERE `publisher`= 'Nintendo'
 -- Opdracht 9
 SELECT `name` , `year` , `Global_Sales`
 FROM `videogamesales` 
-WHERE genre = 'Racing' AND `publisher`='Nintendo' AND `publisher`='Activision'
--- ?
+WHERE genre = 'Racing' AND `publisher`='Nintendo' OR `publisher`='Activision'
 -- Opdracht 10
---?
+SELECT AVG(NA_Sales)AS 'Sales North America',AVG(EU_Sales) AS 'Sales Europe',AVG(JP_Sales) AS 'Sales Japan'
+FROM videogamesales
 -- Opdracht 11
 DELETE FROM `videogamesales` WHERE `name`="Halo 2"
 -- Opdracht 12
